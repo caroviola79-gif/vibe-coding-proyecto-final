@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Minería LATAM · Proyecto final</title>
+<meta name="description" content="Monitoreo semanal de prensa sobre minería ilegal en América Latina · Vibe Coding CEDIA 2026">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #0b1020; --muted: #5b6373; --card: #f5f6fa; --line: #e3e5ee;
+    --accent: #5b4bdb; --gold: #b07d00; --teal: #0d9488;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0b1020; --fg: #eef0f6; --muted: #a7aec0; --card: #141b30; --line: #232c46;
+            --accent: #9d93ff; --gold: #ffc629; --teal: #2dd4bf; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 17px/1.55 Calibri, "Segoe UI", system-ui, sans-serif; }
+  main { max-width: 1040px; margin: 0 auto; padding: 40px 16px 56px; }
+  .eyebrow { color: var(--gold); font-weight: 700; letter-spacing: .06em; font-size: 13px; text-transform: uppercase; }
+  h1 { font-family: Georgia, serif; font-weight: 400; font-size: clamp(34px, 6vw, 52px); margin: 8px 0 6px; }
+  h2 { font-family: Georgia, serif; font-weight: 400; font-size: 26px; margin: 0 0 4px; }
+  .lead { color: var(--muted); font-size: 19px; margin: 0 0 18px; }
+  .authors { font-weight: 700; margin: 0; }
+  .meta { color: var(--muted); margin: 2px 0 0; }
+  .notice { margin: 22px 0 32px; padding: 12px 16px; border-left: 4px solid var(--gold);
+            background: var(--card); border-radius: 6px; font-size: 15px; }
+  .grid { display: grid; gap: 24px; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  section.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .tag { display: inline-block; font-size: 12px; font-weight: 700; color: var(--accent); letter-spacing: .05em; }
+  video { width: 100%; aspect-ratio: 16 / 9; border-radius: 8px; background: #000; margin: 10px 0 8px; display: block; }
+  p.summary { margin: 0; font-size: 15.5px; }
+  ul.files { list-style: none; padding: 0; margin: 32px 0 0; display: grid; gap: 10px; }
+  ul.files a { display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; border-radius: 8px;
+               border: 1px solid var(--line); color: var(--fg); text-decoration: none; }
+  ul.files a:hover, ul.files a:focus-visible { border-color: var(--accent); outline: none; }
+  ul.files span { color: var(--muted); font-size: 14px; white-space: nowrap; }
+  footer { color: var(--muted); font-size: 13px; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Proyecto final · Final project · Vibe Coding CEDIA 2026</div>
+  <h1>Minería LATAM</h1>
+  <p class="lead">Monitoreo semanal de prensa sobre minería ilegal en América Latina<br>
+     Weekly press monitoring of illegal mining in Latin America</p>
+  <p class="authors">Carolina Viola Reyes · Universidad UTE, FDCAS &nbsp;·&nbsp; Santiago Joel Jumbo · UTPL, Facultad de Ciencias Exactas y Naturales</p>
+  <p class="meta">Guía de proyecto 03 · Project guide 03</p>
+
+  <p class="notice">Narración generada con voz de IA (ElevenLabs) y revisada por los autores.<br>
+     Narration generated with an AI voice (ElevenLabs) and reviewed by the authors.</p>
+
+  <div class="grid">
+    <section class="card" lang="es">
+      <span class="tag">ESPAÑOL · 4:51</span>
+      <h2>Video en español</h2>
+      <video controls preload="metadata" src="VC-2026-006-030_ProyectoFinal_ES.mp4"></video>
+      <p class="summary">Prototipo de monitoreo automatizado de prensa: busca cada semana en 40 medios autorizados,
+        codifica cada noticia en 12 variables con apoyo de IA y revisión humana, y mide la precisión de su propia búsqueda.</p>
+    </section>
+    <section class="card" lang="en">
+      <span class="tag">ENGLISH · 4:57</span>
+      <h2>Video in English</h2>
+      <video controls preload="metadata" src="VC-2026-006-030_ProyectoFinal_EN.mp4"></video>
+      <p class="summary">A prototype for automated press monitoring: it searches 40 authorized news sites every week,
+        codes each story in 12 variables with AI support and human review, and scores the precision of its own search.</p>
+    </section>
+  </div>
+
+  <ul class="files">
+    <li><a href="VC-2026-006-030_ProyectoFinal_ES.pptx" download>Presentación en español (.pptx) <span>guion en las notas</span></a></li>
+    <li><a href="VC-2026-006-030_ProyectoFinal_EN.pptx" download>Slides in English (.pptx) <span>script in speaker notes</span></a></li>
+    <li><a href="VC-2026-006-030_NotaMetodologica.docx" download>Nota metodológica (.docx) <span>lección R5.3</span></a></li>
+  </ul>
+
+  <footer>Curso Vibe Coding CEDIA 2026 · Universidad UTE · UTPL · Uso educativo · Las capturas usan datos públicos de prensa, sin datos personales.</footer>
+</main>
+</body>
+</html>
